@@ -22,7 +22,9 @@ const HEROES: Hero[] = [
 export class AppComponent {
   title = 'Tour of Heros';
   heroes = HEROES;
+  selectedHero: Hero;
 
-
-
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 }
